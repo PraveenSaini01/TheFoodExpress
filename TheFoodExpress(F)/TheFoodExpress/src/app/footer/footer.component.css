@@ -1,0 +1,90 @@
+.footer{
+  background:#FFB200;
+ padding: 3px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+  margin-top: 2px;
+ display: flex;
+}
+
+.food{
+  color:black ;
+}
+
+.footer p{
+  color:rgb(8, 8, 8);
+  font-size:1.2 em;
+  padding: 5px;
+
+}
+
+
+.footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:rgb(5, 5, 5);
+  font-size:1em;
+  display: inline;
+  font-weight: bolder;
+}
+
+.footer .row a{
+  color:rgb(6, 6, 6);
+  transition:0.5s;
+}
+
+.footer .row a:hover{
+  color:#fff;
+}
+
+.footer .row ul{
+  width:100%;
+}
+
+.footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+}
+
+.footer .row a i{
+  font-size:10em;
+  margin:0% 1%;
+}
+
+
+.img{
+  padding: 5px;
+  margin-left: 10px;
+
+
+}
+#top{
+  color:rgb(208, 244, 191);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 9px;
+}
+
+.cu,.os,.pp,.Tc
+{
+  font-size: 3vh;
+  font-weight:bolder;
+  margin-left: -10px;
+}
+
+.cu {
+  margin-left: -150px;
+}
+
+.pp
+{
+  margin-left: -120px;
+}
+
+.row{
+  font-size: 10px;
+  font-weight: bo;
+}

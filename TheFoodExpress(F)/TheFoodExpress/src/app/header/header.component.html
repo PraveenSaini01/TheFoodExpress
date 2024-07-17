@@ -1,0 +1,52 @@
+ <!-- <mat-toolbar class="header"  >
+  <span class="logo">TheFoodExpress</span>
+  <span class="spacer"></span>
+
+ <button class="registration-btn" mat-button  id="home" routerLink="/" >Home</button>
+  <button class="registration-btn" mat-button  routerLink="/registration">Register</button>
+
+  <button class="login-btn" mat-button *ngIf="authService.isAuthenticatedUser(); else loginLink">
+    <a (click)="logout()">Logout</a>
+  </button>
+  <ng-template #loginLink>
+    <button class="login-btn" mat-button routerLink="/login">Login</button>
+  </ng-template>
+
+
+</mat-toolbar>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+ <mat-toolbar class="header">
+  <span class="logo"><span class="hd">THE</span><span class="ct-animate-blink">FOOD</span><span class="hd">EXPRESS</span>  </span>
+  <span class="spacer"></span>
+
+  <button class="registration-btn" mat-button id="home" routerLink="/">Home</button>
+  <button class="registration-btn" mat-button routerLink="/registration">Register</button>
+
+  <div *ngIf="authService.isAuthenticatedUser(); else loginLink" class="user-info">
+    <div class="user-info-text" [matMenuTriggerFor]="menu">Welcome {{ authService.userEmail?.split('@')[0] || 'User' }}</div>
+
+
+
+  </div>
+
+  <ng-template #loginLink>
+    <button class="login-btn" mat-button routerLink="/login">Login</button>
+  </ng-template>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+
+</mat-toolbar>

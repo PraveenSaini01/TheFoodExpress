@@ -1,0 +1,71 @@
+<div class="body-container">
+
+  <img src="../../assets/images/Anime Food Wallpaper aesthetic HD.jpeg" alt="Food Background Image" class="food-image">
+</div>
+<div class="registration-form">
+
+  <h2>Registration</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <span>Email:</span>
+      <input type="email"   formControlName="emailId" placeholder="Enter your Email" />
+      <div id="err" *ngIf="userForm.get('emailId')?.hasError('required') && userForm.get('emailId')?.touched">
+        Email is required.
+      </div>
+      <div id="err" *ngIf="userForm.get('emailId')?.hasError('email') && userForm.get('emailId')?.touched">
+        Please enter a valid email address.
+      </div>
+    </div>
+    <div class="form-group">
+      <span>Password:</span>
+      <input type="password" placeholder="Enter your Password" formControlName="password">
+      <div id="err" *ngIf="password?.errors?.['required'] && password?.dirty">
+          Password is required
+      </div>
+      <div id="err" *ngIf="password?.errors?.['pattern']">
+           should have min 7 letter password, with at least a symbol, upper and lower case letters
+              and a number.
+      </div>
+  </div>
+    <!-- <div class="form-group">
+      <label for="role">Role:</label>
+      <input type="text" id="role" formControlName="role" />
+      <div *ngIf="userForm.get('role')?.hasError('required') && userForm.get('role')?.touched">
+        Role is required.
+      </div>
+    </div> -->
+    <button type="submit" class="registbutton" [disabled]="userForm.invalid">Register</button>
+  </form>
+</div>
+
+
+
+
+  <!-- <mat-form-field class="example-full-width">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="Enter your first name" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="Enter your last name" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Enter your email" type="email" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Enter your password" type="password" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Confirm Password</mat-label>
+    <input matInput placeholder="Confirm your password" type="password" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Register</button> -->
+<!-- </form> -->

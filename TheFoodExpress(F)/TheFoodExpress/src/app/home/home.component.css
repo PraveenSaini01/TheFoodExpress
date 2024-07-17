@@ -1,0 +1,143 @@
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background: none;
+  color:  white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 15px rgb(10, 10, 10); */
+  text-shadow: -2px -2px 2px #000000, 2px -2px 2px #000000, -2px 2px 2px #000000, 2px 2px 2px #000000;
+}
+
+.registration-btn {
+  color: #f3efef;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font: small-caps bold , sans-serif;
+  margin-left: 620px;
+  text-shadow: 2px 2px 15px rgb(9, 9, 9);
+
+
+}
+
+
+.login-btn {
+  color: #f8f8f8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 20px;
+  font: small-caps bold , sans-serif;
+  text-shadow: 2px 2px 15px rgb(9, 9, 9);
+}
+
+
+.registration-btn:hover,
+.login-btn:hover {
+
+  background-color: rgb(242, 224, 67);
+}
+.button-container {
+  display: flex;
+}
+
+
+.body-container {
+  position: relative;
+  text-align: center;
+
+}
+
+.welcome-container {
+  position: absolute;
+  top:53%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+}
+
+.welcome-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 15px rgb(10, 10, 10);
+}
+
+.sub-text {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: -50px;
+ font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 15px rgb(10, 10, 10);
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .registration-btn,
+  .login-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.wlc
+{
+  color: #FFB200;
+  margin-left: -2px;
+
+}
+.food
+{
+  color: #FFB200;
+  margin-left: 7px;
+}
+ .space{
+  margin-left: 85px;
+
+ }

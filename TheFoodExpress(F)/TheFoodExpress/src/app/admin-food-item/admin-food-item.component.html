@@ -1,0 +1,42 @@
+<section>
+<div id="formBxFoodItem" class="form-box">
+
+  <h2 class="form-title">Add New Food Item:</h2>
+
+  <form [formGroup]="addform">
+
+    <mat-form-field appearance="fill">
+    <input matInput type="text" name="restaurantId"placeholder="Enter Restaurant Id" formControlName="restaurantId" required>
+    </mat-form-field>
+    <br>
+
+      <mat-form-field appearance="fill">
+          <input matInput type="text" name="itemId" placeholder="Item Id" formControlName="itemId" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill"><input matInput type="text" name="description"
+        placeholder=" item description " formControlName="description" required></mat-form-field>
+     <br>
+      <mat-form-field appearance="fill">
+          <input matInput type="text" name="itemName" placeholder="Item Name" formControlName="itemName"
+              required>
+      </mat-form-field>
+
+      <br>
+      <mat-form-field appearance="fill">
+        <input matInput type="text" name="imageUrl" placeholder="ImageUrl of the foodItem"
+            formControlName="imageUrl" required>
+    </mat-form-field>
+    <br>
+
+      <mat-form-field appearance="fill">
+          <input matInput type="number" name="price" placeholder="Price" formControlName="price" required>
+      </mat-form-field>
+      <br>
+
+      <button type="submit" mat-raised-button color="accent" [disabled]="!addform.valid"
+          (click)="addFoodMenuItem()">Add Food Item</button>
+  </form>
+</div>
+
+</section>

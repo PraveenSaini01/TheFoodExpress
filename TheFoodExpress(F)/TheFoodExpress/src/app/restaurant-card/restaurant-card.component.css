@@ -1,0 +1,65 @@
+
+
+.restaurant{
+  width: 260px;
+  height: 320px;
+  margin: 20px 20px 20px 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color:#F1E4C3;
+
+
+}
+.restaurant-title{
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+
+}
+
+button{
+  display: table-cell;
+  max-width: 600px;
+  margin-left: 80px;
+  border: 1px solid rgb(0, 0, 0);
+ font-weight: bolder;
+}
+button:hover{
+  background-color: rgb(168, 114, 32);
+}
+
+#image{
+  width: 230px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 10px;
+cursor: pointer;
+}
+
+.example-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+.content{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+
+}
+
+
+
+
+.allcontent{
+  margin-top: -220px;
+  color: black;
+  font-weight: bolder;
+}
+
+
+
+

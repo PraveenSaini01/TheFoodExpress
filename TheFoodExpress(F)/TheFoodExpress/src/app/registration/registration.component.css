@@ -1,0 +1,141 @@
+/* registration.component.css */
+.registration-form {
+  width: 320px;
+  height:330px;
+
+margin-bottom: 220px;
+margin-left: 600px;
+
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color:#F1E4C3;
+
+  -o-border-radius: 0 10px 10px 0;
+
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bolder;
+}
+span{
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bolder;
+}
+.food-image {
+
+  width: 320px;
+  height:330px;
+    object-fit: cover;
+    opacity: 0.5;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+margin-left: 278px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+    transition: opacity 0.3s ease-in-out;
+
+
+  }
+
+  .food-image:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+
+
+input {
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.registbutton {
+  font-size: 1rem;
+
+margin-top: -5px;
+margin-left:90px;
+  color: #000000;
+  background-color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #030303;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.registbutton:hover {
+  background-color: #F1E4C3;
+}
+
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -330px;
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    flex-direction: column;
+  }
+
+  .registration-form {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#err{
+  color:red
+}
+
+
+
+
+
+/* styles.css */
+
+/* Apply background color to the input boxes */
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex .mat-form-field-infix {
+  background-color: #25d8f0; /* Replace with your desired color */
+}
+/* registration.component.css */
+.example-form {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+matInput
+{
+  background-color: #25d8f0;
+}

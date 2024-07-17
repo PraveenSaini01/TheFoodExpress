@@ -1,0 +1,31 @@
+<div class="body-container">
+
+  <img src="../../assets/images/20 Awesome Food Photography Blogs to Follow in 2023 (1).jpeg" alt="Food Background Image" class="food-image">
+</div>
+  <section id="login-form">
+    <form class="loginform" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+
+      <h2>L<span class="lg">og</span>in</h2>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="emailId"  placeholder="Email" required>
+        <mat-error *ngIf="loginForm.get('emailId')?.hasError('required')">Email ID is required</mat-error>
+        <mat-error *ngIf="loginForm.get('emailId')?.hasError('pattern')">Enter a valid email ID</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Password" required>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('pattern')">
+          Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character.
+        </mat-error>
+      </mat-form-field>
+
+
+
+      <button  class="loginBtn" type="submit" [disabled]="!loginForm.valid" >Login</button>
+    </form>
+  </section>
+
